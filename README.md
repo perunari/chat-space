@@ -23,6 +23,7 @@ has_many: users, through:  :groups_users
 |------|----|-------|
 |user_id||integer||
 |group_id|integer||
+### Asociation
 belongs_to: user
 belongs_to: group
 
