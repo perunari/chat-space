@@ -12,7 +12,7 @@ has_many: messages
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group| integer| null: false|
+|group_name| integer| null: false|
 ### Asociation
 has_many: groups_users
 has_many: users, through:  :groups_users
