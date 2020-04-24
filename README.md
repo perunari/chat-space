@@ -21,7 +21,7 @@ has_many: messages
 ## users_groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id||integer||
+|user_id|integer||
 |group_id|integer||
 ### Asociation
 belongs_to: user
