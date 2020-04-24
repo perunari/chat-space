@@ -27,7 +27,6 @@ has_many: messages
 belongs_to: user
 belongs_to: group
 
-
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
