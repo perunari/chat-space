@@ -1,0 +1,29 @@
+.main-bar
+  .main-bar__main-header
+    .main-bar__main-header__left
+      %h2.main-bar__main-header__left__group
+        Group - aaa
+      %h3.main-bar__main-header__left__member
+        Menber - bbb
+    .main-bar__main-header__right
+      .main-bar__main-header__right__btn
+        = link_to "#" do
+          %span<>
+          編集
+  .main-bar__main-messages
+    .box
+      .box__data
+        %p.name
+          masuda
+        %p.time
+          2020-04-27
+      .box__text
+        abcd
+  .main-bar__main-form
+    .main-bar__main-form__submit
+      .main-bar__main-form__submit__box
+        %input{type: "text", class: "main-bar__main-form__submit__box__text", placeholder: "テキストを入力してください"}
+        %label{class:"main-bar__main-form__submit__box__img"}
+          = icon('far','file-image')
+          %input{type:"file",class: "main-bar__main-form__submit__box__img__file"}
+    %input{type:"submit",class:"main-bar__main-form__submit__btn"}
