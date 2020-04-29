@@ -28,8 +28,8 @@
         }
       }
     }
-  }
-  .side-main{
+}
+.side-main{
   height: calc( 100vh - 122px); /*border分*/
   background-color: #48438b;
   padding :20px 20px 0;
@@ -45,8 +45,8 @@
       margin-left :20px;
       }
     }
-  }
-  .main-bar {
+}
+.main-bar {
   height:100vh;
   width: calc(100% - 300px);
   float:left;
@@ -196,4 +196,6 @@
   
     }
     }
-  }
+}
+
+
