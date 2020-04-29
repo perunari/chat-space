@@ -1,0 +1,18 @@
+.side-bar
+  .side-header
+    .side-header__text
+      %p.side-header__text__name
+        masuda
+      %ul.side-header__text__menu
+        %li.side-header__text__menu__set1
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.side-header__text__menu__set2
+          = link_to "#" do
+            = icon('fa','wrench')
+  .side-main
+    = link_to "#" , class: "group" do
+      %p.group__team
+        aaa
+      %p.group__message
+        bbb
