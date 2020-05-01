@@ -1,0 +1,201 @@
+.side-bar{
+  height:100vh;
+  width:300px;
+  background-color:#FFFFED;
+  float:left;
+    .side-header {
+    height:100px;
+    background-color: #000033;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+    border-right: solid 2px black;
+    border-bottom:solid 2px black;
+      &__text{
+      /*background-color:white;*/
+      color:white;
+      width:260px;
+      font-weight: bold;
+      display:flex;
+      justify-content: space-between;
+        &__menu {
+        display: flex;
+          li {
+            a {
+            color: blue;
+            }
+          }
+        }
+      }
+    }
+}
+.side-main{
+  height: calc( 100vh - 122px); /*border分*/
+  background-color: #48438b;
+  padding :20px 20px 0;
+  border-right :solid 2px black; 
+    .group {
+    color:white;
+    text-decoration: none;
+      &__team {
+      font-size :20px;
+      }
+      &__message {
+      font-size :10px;
+      margin-left :20px;
+      }
+    }
+}
+.main-bar {
+  height:100vh;
+  width: calc(100% - 300px);
+  float:left;
+    &__main-header {
+    height:100px;
+    color :white;
+    background-color: #191970;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:solid 2px black;
+      &__left {
+      margin-top :35px;
+      margin-left: 40px;
+        &__group {
+        font-size :20px;
+        margin-bottom :15px;
+        }
+        &__member {
+        color :#BBBBBB;
+        font-size: 8px;
+        }
+      }
+        &__right{
+        height:40px;
+        line-height:40px;
+        margin :25px 30px;
+          &__btn{
+            a{
+              display: inline-block;
+              position: relative;
+              width: 50px;
+              height: 50px;
+              line-height: 50px;
+              text-align: center;
+              text-decoration: none;
+              color: #FFFFFF;
+              background: #2DCCD3;
+              border-radius: 50%;
+            }
+            a:hover{
+              cursor: pointer;
+                text-decoration: none;
+                text-align: center;
+                transition: transform .3s;
+                transform-origin: center;
+                transform: scale(0.9, 0.9);
+                opacity: 0.7;
+            }
+            a::after {
+              display: inline-block;
+              content: "";
+              width: 49px;
+              height: 49px;
+              position: absolute;
+              border-radius: 70%;
+              color:#fff;
+              top: -0.5px;
+              left: -0.6px;
+              border: 1px solid #2DCCD3;
+              transition: transform .5s ease;
+              visibility: hidden;
+            }
+            a::after {
+              cursor: pointer;
+              text-decoration: none;
+              transition: transform .5s ease;
+              transform-origin: center;
+              transform: scale(1.4, 1.4);
+              opacity: 0.7;
+              visibility: visible;
+            }
+          }
+        }
+    }
+    &__main-messages {
+    height: calc( 100vh - 288px);
+    background-color: white;
+    padding :46px 40px;
+      .box {
+        &__data {
+        display: flex;
+          p.name {
+            font-size: 16px;
+            color: #333333;
+          }
+          p.time {
+            color:#999999;
+            font-size: 12px;
+            margin-left :10px;
+          }
+        }
+        &__text {
+          margin-top: 12px;
+          margin-bottom: 46px;
+          color:gray;
+        }
+      }
+    }
+    &__main-form {
+    width: calc(100% - 384px);
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border :solid 2px black;
+    Position: absolute;
+    bottom:0;
+    display: flex;
+    padding :20px 40px;
+      &__submit {
+        width:100%;
+        display: flex;
+        &__box {
+          width:100%;
+          height :50px;
+          display: flex;
+          position: relative;
+          align-items: center;
+            &__text {
+              width: 100%;
+              height: 50px;
+              background-color:white;
+              color :#c0c0c0;
+            }
+            &__img {
+              cursor: pointer;
+              line-height: 45px;
+              position: absolute;
+              top :6px;
+              right: 10px;
+              font-size :1.5rem;
+                &__file {
+                display: none;
+                }
+            }
+        }
+      &__btn {
+        width: 100px;
+        height: 50px;
+        background-color: skyblue;
+        color :white;
+        cursor:pointer;
+        margin-left :15px;
+      }
+      &__btn:hover {
+        background: #38aef0;
+        color: #fff;
+      }
+  
+    }
+    }
+}
+
+
