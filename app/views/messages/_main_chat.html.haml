@@ -4,10 +4,12 @@
       %h2.main-bar__main-header__left__group
         = @group.name
       %h3.main-bar__main-header__left__member
-        Menber - bbb
+        Menber 
+        - @group.users.each do |user|
+          = user.name
     .main-bar__main-header__right
       .main-bar__main-header__right__btn
-        = link_to "#" do
+        = link_to edit_group_path(@group) do
           %span<>
           編集
 
