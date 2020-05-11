@@ -1,29 +1,28 @@
 .side-bar{
   height:100vh;
   width:300px;
-  background-color:#FFFFED;
   float:left;
-  font-family: arial narrow;
     .side-header {
-    height:100px;
-    background-color: #000033;
-    display: flex;
-    align-items: center;
-    padding:0 20px;
-    border-right: solid 2px black;
-    border-bottom:solid 2px black;
+      height:100px;
+      background-color: #253141;;
+      display: flex;
+      align-items: center;
+      padding:0 20px;
       &__text{
-      /*background-color:white;*/
-      color:white;
-      width:260px;
-      font-weight: bold;
-      display:flex;
-      justify-content: space-between;
+        color:white;
+        width:260px;
+        display:flex;
+        justify-content: space-between;
+        &__name {
+          font-size: 16px;
+          font-weight: bold;
+        }
         &__menu {
-        display: flex;
+          display: flex;
           li {
             a {
-            color: blue;
+            color: white;
+            font-size: 16px;
             }
           }
         }
@@ -31,44 +30,43 @@
     }
 }
 .side-main{
-  height: calc( 100vh - 122px); /*border分*/
-  background-color: #48438b;
-  padding :20px 20px 0;
-  border-right :solid 2px black; 
+  height: calc( 100vh - 100px); 
+  background-color: #2f3e51;
+  padding :0 20px; 
   overflow: scroll;
     .group {
     color:white;
     text-decoration: none;
+    padding :20px;
       &__team {
-      font-size :20px;
+      font-size :15px;
       }
       &__message {
-      font-size :10px;
-      margin-left :20px;
+      font-size :11px;
       }
     }
 }
 .main-bar {
-  height:100vh;
   width: calc(100% - 300px);
   float:left;
     &__main-header {
     height:100px;
-    color :white;
-    background-color: #191970;
     display: flex;
     justify-content: space-between;
-    border-bottom:solid 2px black;
+    border-bottom:1px solid #eeeeee;
       &__left {
+      color :#333333;
       margin-top :35px;
       margin-left: 40px;
         &__group {
         font-size :20px;
         margin-bottom :15px;
+        color :#333;
         }
         &__member {
-        color :#BBBBBB;
-        font-size: 8px;
+        color :#999999;
+        font-size: 12px;
+        margin-top:15px;
         }
       }
         &__right{
@@ -76,58 +74,23 @@
         line-height:40px;
         margin :25px 30px;
           &__btn{
-            a{
-              display: inline-block;
-              position: relative;
-              width: 50px;
-              height: 50px;
-              line-height: 50px;
-              text-align: center;
-              text-decoration: none;
-              color: #FFFFFF;
-              background: #2DCCD3;
-              border-radius: 50%;
-            }
-            a:hover{
-              cursor: pointer;
-                text-decoration: none;
-                text-align: center;
-                transition: transform .3s;
-                transform-origin: center;
-                transform: scale(0.9, 0.9);
-                opacity: 0.7;
-            }
-            a::after {
-              display: inline-block;
-              content: "";
-              width: 49px;
-              height: 49px;
-              position: absolute;
-              border-radius: 70%;
-              color:#fff;
-              top: -0.5px;
-              left: -0.6px;
-              border: 1px solid #2DCCD3;
-              transition: transform .5s ease;
-              visibility: hidden;
-            }
-            a::after {
-              cursor: pointer;
-              text-decoration: none;
-              transition: transform .5s ease;
-              transform-origin: center;
-              transform: scale(1.4, 1.4);
-              opacity: 0.7;
-              visibility: visible;
+            border:1px solid #38AEF0;
+            color:#38AEF0;
+            float:right;
+            height:40px;
+            line-height:40px;
+            padding:0 20px;
+            a {
+              color:#38AEF0;
+              text-decoration:none;
             }
           }
         }
     }
     &__main-messages {
-    height: calc( 100vh - 288px);
+    height: calc( 100vh - 283px);
     background-color: white;
     padding :46px 40px;
-    font-family: arial narrow;
     overflow: scroll;
       .box {
         &__data {
@@ -135,6 +98,7 @@
           .name {
             font-size: 16px;
             color: #333333;
+            font-weight: bold;
             
           }
           .time {
@@ -144,17 +108,15 @@
           }
         }
         &__text {
-          margin-top: 12px;
-          margin-bottom: 46px;
+          margin-top: 8px;
+          margin-bottom: 45px;
           color:black;
         }
       }
     }
     &__main-form {
-    width: calc(100% - 384px);
-    border-radius: 10px;
-    background-color: #f2f2f2;
-    border :solid 2px black;
+    width: calc(100% - 380px);
+    background-color: #DDDDDD;
     Position: absolute;
     bottom:0;
     display: flex;
@@ -170,6 +132,7 @@
           align-items: center;
             &__text {
               width: 100%;
+              padding-right:30px;
               height: 50px;
               background-color:white;
               color :black;
@@ -200,7 +163,6 @@
         background: #38aef0;
         color: #fff;
       }
-  
     }
     }
 }
