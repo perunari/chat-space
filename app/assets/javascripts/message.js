@@ -2,40 +2,42 @@ $(function(){
   function buildHTML(message){
    if ( message.image ) {
      var html =
-      `<div class="box" data-message-id=${message.id}>
-         <div class="box__data">
-           <div class="name">
-             ${message.user_name}
-           </div>
-           <div class="time">
+     `<div class= "message" data-message-id=${message.id}>
+        <div class = "box">    
+          <div class="box__data">
+            <div class="name">
+              ${message.user_name}
+            </div>
+          <div class="time">
              ${message.created_at}
-           </div>
-         </div>
-         <div class="box__text">
-           <p class="box__text__content">
-             ${message.content}
-           </p>
-         </div>
+        </div>
+      </div>
+      <div class="box__text">
+        <p class="box__text__content">
+          ${message.content}
+        </p>
+      </div>
          <img src=${message.image} >
-       </div>`
+      </div>`
      return html;
    } else {
      var html =
-      `<div class="box" data-message-id=${message.id}>
-         <div class="box__data">
-           <div class="name">
+     `<div class= "message" data-message-id=${message.id}>
+        <div class = "box">
+          <div class="box__data">
+            <div class="name">
              ${message.user_name}
-           </div>
-           <div class="time">
+            </div>
+            <div class="time">
              ${message.created_at}
-           </div>
+            </div>
          </div>
-         <div class="box__text">
-           <p class="box__text__content">
-             ${message.content}
-           </p>
-         </div>
-       </div>`
+        <div class="box__text">
+          <p class="box__text__content">
+            ${message.content}
+          </p>
+        </div>
+      </div>`
      return html;
    };
  }
@@ -77,8 +79,8 @@ $('#new_message').on('submit', function(e){
       $.each(messages, function(i, message) {
         insertHTML += buildHTML(message)
       });
-      $('.messages').append(insertHTML);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
+      $('.main-bar__main-messages').append(insertHTML);
+      $('.main-bar__main-messages').animate({ scrollTop: $('.main-bar__main-messages')[0].scrollHeight});
       }
     })
     .fail(function() {
