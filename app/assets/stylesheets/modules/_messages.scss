@@ -89,7 +89,7 @@
     }
     &__main-messages {
     height: calc( 100vh - 283px);
-    background-color: white;
+    background-color: #fafafa;
     padding :46px 40px;
     overflow: scroll;
       .box {
@@ -154,15 +154,13 @@
       &__btn {
         width: 100px;
         height: 50px;
-        background-color: skyblue;
+        background-color: #38aef0;
         color :white;
         cursor:pointer;
         margin-left :15px;
       }
-      &__btn:hover {
-        background: #38aef0;
-        color: #fff;
-      }
+
+      
     }
     }
 }
